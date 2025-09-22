@@ -4,49 +4,155 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Afzal Amin — AI Developer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .cv-header {
+      background: linear-gradient(135deg, #0d6efd, #004aad);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .cv-header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .cv-header h2 {
+      font-weight: 300;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+
+    .contact-info a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .section-title {
+      color: #0d6efd;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding-left: 10px;
+      border-left: 4px solid #0d6efd;
+    }
+
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 25px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
-<body>
-  <h1>Afzal Amin</h1>
-  <h2>AI Developer</h2>
-  <p>Email: <a href="mailto:afzalamin537@gmail.com">afzalamin537@gmail.com</a> | Phone: +92 317  549 6530</p>
-  <p>Address: Peshawar, Pakistan</p>
-  <p>GitHub: <a href="https://github.com/afzalsmit">github.com/afzalamindev</a> 
- 
+<body class="container py-4">
 
-  <h3>About Me</h3>
-  <p>Enthusiastic AI Developer with a passion for building machine learning models and deploying intelligent solutions. Skilled in Python, data preprocessing, and deep learning. Eager to solve real-world problems through AI and constantly learning new technologies in the field of Artificial Intelligence.</p>
+  <!-- Header -->
+  <div class="cv-header">
+    <h1>Afzal Amin</h1>
+    <h2>AI Developer</h2>
+    <p class="contact-info">
+      📧 <a href="mailto:afzalamin537@gmail.com">afzalamin537@gmail.com</a> |
+      📱 +92 317 549 6530 |
+      💻 <a href="https://github.com/afzalsmit" target="_blank">github.com/afzalamindev</a>
+    </p>
+    <p>📍 Peshawar, Pakistan</p>
+  </div>
 
-  <h3>Experience</h3>
-  <p><strong>AI Intern — Tech Solutions Pvt Ltd:</strong> Worked on building and fine-tuning NLP models for sentiment analysis and chatbot solutions. Developed small-scale ML pipelines for client projects.</p>
-  <p><strong>Freelance AI Developer:</strong> Built machine learning models for predictive analytics, including classification and recommendation systems for small businesses.</p>
+  <!-- About -->
+  <div class="card p-4">
+    <h3 class="section-title">About Me</h3>
+    <p>Enthusiastic AI Developer with a passion for building machine learning models and deploying intelligent solutions. Skilled in Python, data preprocessing, and deep learning. Eager to solve real-world problems through AI and constantly learning new technologies in the field of Artificial Intelligence.</p>
+  </div>
 
-  <h3>Education</h3>
-  <p>BS (IT) – Agricuture University Peshawar (2023 – 2027) | 3.07 CGPA</p>
+  <!-- Experience -->
+  <div class="card p-4">
+    <h3 class="section-title">Experience</h3>
+    <p><strong>AI Intern — Tech Solutions Pvt Ltd:</strong> Worked on building and fine-tuning NLP models for sentiment analysis and chatbot solutions. Developed small-scale ML pipelines for client projects.</p>
+    <p><strong>Freelance AI Developer:</strong> Built machine learning models for predictive analytics, including classification and recommendation systems for small businesses.</p>
+  </div>
 
-  <h3>Certifications</h3>
-  <p>Data science.AI TensorFlow Developer — Coursera (2025)</p>
-  <p>Python for Data Science — IBM (2023)</p>
+  <!-- Education -->
+  <div class="card p-4">
+    <h3 class="section-title">Education</h3>
+    <p>BS (IT) – Agriculture University Peshawar (2023 – 2027) | <strong>3.07 CGPA</strong></p>
+  </div>
 
-  <h3>Skills</h3>
-  <p><strong>Programming:</strong> Python, SQL</p>
-  <p><strong>AI/ML:</strong> TensorFlow, Scikit-learn, Pandas, NumPy, OpenCV</p>
-  <p><strong>Other Tools:</strong> Git & GitHub, Jupyter Notebook, REST APIs</p>
-  <p><strong>Cloud:</strong> Google Colab, Hugging Face Spaces</p>
+  <!-- Certifications -->
+  <div class="card p-4">
+    <h3 class="section-title">Certifications</h3>
+    <ul>
+      <li>Data science.AI TensorFlow Developer — Coursera (2025)</li>
+      <li>Python for Data Science — IBM (2023)</li>
+    </ul>
+  </div>
 
-  <h3>Projects</h3>
-  <ul>
-    <li>Sentiment Analysis Model — Trained and deployed a model to classify tweets as positive or negative.</li>
-    <li>Image Classification App — Built a CNN to classify images into multiple categories with 90% accuracy.</li>
-    <li>AI Chatbot — Created a simple chatbot using NLP techniques and deployed it on a web interface.</li>
-    <li>Stock Price Predictor — Implemented a time series forecasting model using LSTM networks.</li>
-    <li>Face Detection System — Developed a real-time face detection app using OpenCV.</li>
-  </ul>
+  <!-- Skills -->
+  <div class="card p-4">
+    <h3 class="section-title">Skills</h3>
+    <p><strong>Programming:</strong> Python, SQL</p>
+    <p><strong>AI/ML:</strong> TensorFlow, Scikit-learn, Pandas, NumPy, OpenCV</p>
+    <p><strong>Other Tools:</strong> Git & GitHub, Jupyter Notebook, REST APIs</p>
+    <p><strong>Cloud:</strong> Google Colab, Hugging Face Spaces</p>
+  </div>
 
-  <h3>Languages</h3>
-  <ul>
-    <li>English — Proficient</li>
-    <li>Urdu — Fluent</li>
-    <li>Pashto — Fluent</li>
-  </ul>
+  <!-- Projects -->
+  <div class="card p-4">
+    <h3 class="section-title">Projects</h3>
+    <ul>
+      <li>Sentiment Analysis Model — Trained and deployed a model to classify tweets as positive or negative.</li>
+      <li>Image Classification App — Built a CNN to classify images into multiple categories with 90% accuracy.</li>
+      <li>AI Chatbot — Created a simple chatbot using NLP techniques and deployed it on a web interface.</li>
+      <li>Stock Price Predictor — Implemented a time series forecasting model using LSTM networks.</li>
+      <li>Face Detection System — Developed a real-time face detection app using OpenCV.</li>
+    </ul>
+  </div>
+
+  <!-- Languages -->
+  <div class="card p-4">
+    <h3 class="section-title">Languages</h3>
+    <ul>
+      <li>English — Proficient</li>
+      <li>Urdu — Fluent</li>
+      <li>Pashto — Fluent</li>
+    </ul>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
